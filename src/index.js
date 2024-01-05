@@ -8,7 +8,6 @@ const morgan = require("morgan");
 app.use(morgan("combined"));
 
 // express-handlebars
-app.engine("handlebars", engine());
 app.set("view engine", "handlebars");
 app.set("views", path.join(__dirname, "resources/views")); // Sửa lỗi ở đây, đặt path.join vào trong dấu ngoặc
 
